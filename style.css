@@ -1,18 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-  align-items: center; /* Center content vertically */
-  background-color: #ffffff; /* White graph paper background */
+  align-items: center;
+  background-color: #ffffff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
     /* Thin horizontal lines in light black */
       linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
     /* Thin vertical lines in light black */
       linear-gradient(rgba(0, 0, 0, 0.2) 1px, transparent 1px),
     /* Bold horizontal lines in darker black */
-      linear-gradient(90deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px); /* Bold vertical lines in darker black */
-  background-size: 4mm 4mm, 4mm 4mm, 2cm 2cm, 2cm 2cm; /* Thin lines at 2mm, bold lines at 2cm */
-  background-position: 0 0, 0 0, 2cm 2cm, 2cm 2cm; /* Bold lines offset to every 2nd cube */
+      linear-gradient(90deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+  background-size: 4mm 4mm, 4mm 4mm, 2cm 2cm, 2cm 2cm;
+  background-position: 0 0, 0 0, 2cm 2cm, 2cm 2cm;
   /* overflow: hidden; */
   overflow-x: hidden;
   font-family: Nunito;
@@ -99,7 +98,7 @@ body {
 
 .sectionZ {
   width: 100vw;
-  height: 300px;
+  height: auto;
   padding: 50px;
   font-size: 20px;
   font-weight: 800;
@@ -115,9 +114,10 @@ body {
 
 .wishdiv {
   /* height: 90%; */
-  width: 95%;
+  width: 60%;
   padding: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -127,6 +127,10 @@ body {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+#biggg{
+  font-size: 20px;
 }
 
 .contentsectionscroll {
@@ -317,12 +321,12 @@ body {
 }
 
 .reel-message2 {
-  position: relative; /* To bring it above the overlay */
-  z-index: 2; /* Ensure text is above the overlay */
-  color: black; /* Make text clearly visible */
+  position: relative;
+  z-index: 2;
+  color: black;
   font-size: 16px;
   text-align: center;
-  font-weight: bold; /* Slightly bold for better visibility */
+  font-weight: bold;
 }
 
 #smess12 {
@@ -349,14 +353,51 @@ body {
   background-image: url(https://i.pinimg.com/236x/31/8a/ff/318aff948d425c93de92978748da1cfa.jpg);
 }
 
-/* .navbar {
-    height: 70px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1000;
-} */
+.wishdiv2 {
+  /* height: 90%; */
+  width: 60%;
+  padding: 30px;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  text-align: left;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
 
+.sectionZ2 {
+  width: 100vw;
+  height: auto;
+  padding: 50px;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://i.pinimg.com/736x/7a/21/a6/7a21a60f3aced069d40e5428c15d5778.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* border: 1px solid brown; */
+}
 
+.dissection{
+  font-size: 16px;
+}
+
+#biggg{
+  font-size: 20px;
+}
+
+.lastdiv{
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
